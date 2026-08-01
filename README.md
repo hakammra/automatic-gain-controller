@@ -247,16 +247,18 @@ automatic-gain-controller/
 
 ## Team
 
+<p align="center">
+  <img src="media/images/Group_selfie.jpeg" alt="Project Team" width="650">
+</p>
+
 **Group 08**  
 Department of Electronics and Telecommunication Engineering  
 University of Moratuwa
 
-| Name | GitHub |
-|---|---|
-| [Ahamed A.M.S.](https://github.com/shaahidahamed) | `username1` |
-| [Hakam M.R.A.](https://github.com/hakammra) | `hakammra` |
-| [Umair A.](https://github.com/AyubUmair) | `username3` |
-| [Santhosh S.](https://github.com/santhosh-04-S) | `username4` |
+[Ahamed A.M.S.](https://github.com/shaahidahamed)
+[Hakam M.R.A.](https://github.com/hakammra)
+[Umair A.](https://github.com/AyubUmair)
+[Santhosh S.](https://github.com/santhosh-04-S)
 
 ---
 
