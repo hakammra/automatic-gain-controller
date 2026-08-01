@@ -100,7 +100,7 @@ The circuit was first implemented on a breadboard. Each stage was tested separat
 ## Project Evaluation Setup
 
 <p align="center">
-  <img src="media/images/Project_evaluation_setup.jpeg" alt="Project Evaluation Setup" width="600">
+  <img src="media/images/Project_evaluation_setup.jpeg" alt="Project Evaluation Setup" width="500">
 </p>
 
 The project was tested using real audio input and measurement equipment. The output waveform was observed using an oscilloscope, and the sound output was checked using a speaker.
@@ -124,7 +124,7 @@ This capture shows the relationship between the audio input and output signals i
 #### Peak and Control Voltage
 
 <p align="center">
-  <img src="simulation/proteus/Captures/peak_and_control.png" alt="Peak and Control Voltage Simulation" width="650">
+  <img src="simulation/proteus/Captures/peak_and_control.png" alt="Peak and Control Voltage Simulation" width="550">
 </p>
 
 This capture shows the detected peak signal and the generated control voltage used for automatic gain control.
