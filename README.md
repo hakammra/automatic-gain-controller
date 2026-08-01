@@ -1,18 +1,22 @@
 # Automatic Gain Controller
 
 <p align="center">
-  <img src="media/images/agc_block_diagram.png" alt="AGC Block Diagram" width="850">
+  <img src="media/images/agc_thumbnail.png" alt="Automatic Gain Controller Overview" width="950">
 </p>
 
 This repository contains the project files for our **Automatic Gain Controller (AGC)** project. The project focuses on designing, simulating, building, and testing an analog audio AGC circuit.
 
 The circuit keeps the output audio level more stable when the input signal level changes. It uses op-amps for buffering and amplification, and a JFET as a voltage-controlled resistor for gain control.
 
+---
+
 ## Project Summary
 
 In many audio systems, the input signal is not constant. For example, a phone output, microphone signal, or recorded audio can change in level. If the input is too low, the output becomes weak. If the input is too high, the output can clip or distort.
 
 To reduce this problem, this project uses an Automatic Gain Controller. When the input signal is weak, the circuit increases the gain. When the input signal is high, the circuit reduces the gain. This helps to keep the output level nearly constant.
+
+---
 
 ## Main Features
 
@@ -27,6 +31,8 @@ To reduce this problem, this project uses an Automatic Gain Controller. When the
 - Simulation and hardware testing
 - Real audio testing using a mobile phone and speaker
 
+---
+
 ## Main Components
 
 | Component | Purpose |
@@ -39,22 +45,26 @@ To reduce this problem, this project uses an Automatic Gain Controller. When the
 | Audio jack | Phone/audio input connection |
 | Dual power supply | Circuit power supply |
 
+---
+
 ## System Design
 
-The AGC system has two main paths:
+The AGC system has two main paths.
 
-**Forward signal path**
+### Forward Signal Path
 
 ```text
 Input → Buffer → Pre-Amplifier → Amplifier → Low Pass Filter → Output
 ```
 
-**Feedback control path**
+### Feedback Control Path
 
 ```text
 Amplifier output → Peak Detector → Subtractor → Compression Ratio Control
 → Voltage Controlled Resistor → Signal path before amplifier
 ```
+
+---
 
 ## Block Diagram
 
@@ -64,6 +74,8 @@ Amplifier output → Peak Detector → Subtractor → Compression Ratio Control
 
 The block diagram shows the main audio path and the feedback path used for automatic gain control.
 
+---
+
 ## Circuit Schematic
 
 <p align="center">
@@ -71,6 +83,8 @@ The block diagram shows the main audio path and the feedback path used for autom
 </p>
 
 The schematic shows the complete AGC circuit with op-amp stages, peak detector, control path, and JFET-based gain control section.
+
+---
 
 ## Hardware Implementation
 
@@ -80,6 +94,8 @@ The schematic shows the complete AGC circuit with op-amp stages, peak detector, 
 
 The circuit was first implemented on a breadboard. Each stage was tested separately before testing the full AGC circuit.
 
+---
+
 ## Project Evaluation Setup
 
 <p align="center">
@@ -88,11 +104,49 @@ The circuit was first implemented on a breadboard. Each stage was tested separat
 
 The project was tested using real audio input and measurement equipment. The output waveform was observed using an oscilloscope, and the sound output was checked using a speaker.
 
+---
+
+## Simulation
+
+The circuit was simulated in **Proteus** before hardware implementation. Simulation was used to verify whether the AGC circuit could amplify weak input signals, reduce strong input signals, and generate a proper control voltage.
+
+### Proteus Captures
+
+#### Audio Input and Output
+
+<p align="center">
+  <img src="simulation/proteus/Captures/Audio_in_and_out.png" alt="Audio Input and Output Simulation" width="800">
+</p>
+
+This capture shows the relationship between the audio input and output signals in the simulation.
+
+#### Peak and Control Voltage
+
+<p align="center">
+  <img src="simulation/proteus/Captures/peak_and_control.png" alt="Peak and Control Voltage Simulation" width="800">
+</p>
+
+This capture shows the detected peak signal and the generated control voltage used for automatic gain control.
+
+### Proteus Project Files
+
+The main simulation files are stored in the `simulation/proteus` folder. These include:
+
+- `AGC.pdsprj`
+- `AGC [Autosaved].pdsprj`
+- project backup files inside `Project Backups/`
+
+These files can be used to open, review, and modify the Proteus simulation of the AGC circuit.
+
+---
+
 ## Testing
 
 The circuit was tested using a function generator and also using real audio from a mobile phone. The output was observed on an oscilloscope. A speaker was also connected to check the sound output.
 
 During testing, the gain increased for weak input signals and reduced for stronger input signals. The output was not perfectly constant, but it was more stable than a normal fixed-gain amplifier.
+
+---
 
 ## Performance Summary
 
@@ -108,6 +162,8 @@ During testing, the gain increased for weak input signals and reduced for strong
 | Clipping condition | No clipping under normal operation |
 | Output/Input variation ratio | 1/100 |
 
+---
+
 ## Bill of Materials
 
 The BOM file is available in:
@@ -118,6 +174,8 @@ docs/AGC_BOM.xlsx
 
 It contains the main components used for the AGC circuit, including op-amps, JFET, diode, resistors, capacitors, potentiometers, and other hardware parts.
 
+---
+
 ## Project Report
 
 The final project report is available in the `docs` folder.
@@ -126,6 +184,8 @@ The final project report is available in the `docs` folder.
 docs/
 ```
 
+---
+
 ## Demonstration Video
 
 The demonstration video link can be found in:
@@ -133,6 +193,8 @@ The demonstration video link can be found in:
 ```text
 media/videos/DEMO.md
 ```
+
+---
 
 ## Repository Structure
 
@@ -152,13 +214,23 @@ automatic-gain-controller/
 │   ├── images/
 │   │   ├── Group_selfie.jpeg
 │   │   ├── Project_evaluation_setup.jpeg
-│   │   └── agc_block_diagram.png
+│   │   ├── agc_block_diagram.png
+│   │   └── agc_thumbnail.png
 │   └── videos/
 │       └── DEMO.md
 ├── references/
 │   └── references.md
 └── simulation/
+    └── proteus/
+        ├── Captures/
+        │   ├── Audio_in_and_out.png
+        │   └── peak_and_control.png
+        ├── Project Backups/
+        ├── AGC.pdsprj
+        └── AGC [Autosaved].pdsprj
 ```
+
+---
 
 ## Folder Details
 
@@ -167,10 +239,12 @@ automatic-gain-controller/
 | `docs` | Final report and BOM file |
 | `hardware/schematics` | AGC circuit schematic |
 | `hardware/breadboard` | Breadboard implementation photo |
-| `media/images` | Block diagram, group photo, and evaluation setup images |
+| `media/images` | Thumbnail, block diagram, group photo, and evaluation setup images |
 | `media/videos` | Demonstration video link |
 | `references` | Datasheets, websites, and project references |
-| `simulation` | Simulation files and screenshots |
+| `simulation/proteus` | Proteus simulation files, captures, and backups |
+
+---
 
 ## Team
 
@@ -181,6 +255,8 @@ automatic-gain-controller/
 **Group 08**  
 Department of Electronics and Telecommunication Engineering  
 University of Moratuwa
+
+---
 
 ## License
 
