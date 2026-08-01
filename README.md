@@ -1,7 +1,7 @@
 # Automatic Gain Controller
 
 <p align="center">
-  <img src="media/images/AGC_thumbnail.png" alt="Automatic Gain Controller Overview" width="750">
+  <img src="media/images/AGC_thumbnail.png" alt="Automatic Gain Controller Overview" width="850">
 </p>
 
 
