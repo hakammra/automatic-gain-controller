@@ -1,7 +1,7 @@
 # Automatic Gain Controller
 
 <p align="center">
-  <img src="media/images/AGC_thumbnail.png" alt="Automatic Gain Controller Overview" width="950">
+  <img src="media/images/AGC_thumbnail.png" alt="Automatic Gain Controller Overview" width="750">
 </p>
 
 
@@ -70,7 +70,7 @@ Amplifier output → Peak Detector → Subtractor → Compression Ratio Control
 ## Block Diagram
 
 <p align="center">
-  <img src="media/images/agc_block_diagram.png" alt="AGC Block Diagram" width="850">
+  <img src="media/images/agc_block_diagram.png" alt="AGC Block Diagram" width="650">
 </p>
 
 The block diagram shows the main audio path and the feedback path used for automatic gain control.
@@ -80,7 +80,7 @@ The block diagram shows the main audio path and the feedback path used for autom
 ## Circuit Schematic
 
 <p align="center">
-  <img src="hardware/schematics/AGC_Circuit.png" alt="AGC Circuit Schematic" width="850">
+  <img src="hardware/schematics/AGC_Circuit.png" alt="AGC Circuit Schematic" width="650">
 </p>
 
 The schematic shows the complete AGC circuit with op-amp stages, peak detector, control path, and JFET-based gain control section.
@@ -90,7 +90,7 @@ The schematic shows the complete AGC circuit with op-amp stages, peak detector, 
 ## Hardware Implementation
 
 <p align="center">
-  <img src="hardware/breadboard/AGC_Breadboard_Top.jpeg" alt="AGC Breadboard Implementation" width="550">
+  <img src="hardware/breadboard/AGC_Breadboard_Top.jpeg" alt="AGC Breadboard Implementation" width="450">
 </p>
 
 The circuit was first implemented on a breadboard. Each stage was tested separately before testing the full AGC circuit.
@@ -100,7 +100,7 @@ The circuit was first implemented on a breadboard. Each stage was tested separat
 ## Project Evaluation Setup
 
 <p align="center">
-  <img src="media/images/Project_evaluation_setup.jpeg" alt="Project Evaluation Setup" width="750">
+  <img src="media/images/Project_evaluation_setup.jpeg" alt="Project Evaluation Setup" width="600">
 </p>
 
 The project was tested using real audio input and measurement equipment. The output waveform was observed using an oscilloscope, and the sound output was checked using a speaker.
@@ -116,7 +116,7 @@ The circuit was simulated in **Proteus** before hardware implementation. Simulat
 #### Audio Input and Output
 
 <p align="center">
-  <img src="simulation/proteus/Captures/Audio_in_and_out.png" alt="Audio Input and Output Simulation" width="800">
+  <img src="simulation/proteus/Captures/Audio_in_and_out.png" alt="Audio Input and Output Simulation" width="550">
 </p>
 
 This capture shows the relationship between the audio input and output signals in the simulation.
@@ -124,7 +124,7 @@ This capture shows the relationship between the audio input and output signals i
 #### Peak and Control Voltage
 
 <p align="center">
-  <img src="simulation/proteus/Captures/peak_and_control.png" alt="Peak and Control Voltage Simulation" width="800">
+  <img src="simulation/proteus/Captures/peak_and_control.png" alt="Peak and Control Voltage Simulation" width="650">
 </p>
 
 This capture shows the detected peak signal and the generated control voltage used for automatic gain control.
@@ -250,7 +250,7 @@ automatic-gain-controller/
 ## Team
 
 <p align="center">
-  <img src="media/images/Group_selfie.jpeg" alt="Project Team" width="650">
+  <img src="media/images/Group_selfie.jpeg" alt="Project Team" width="450">
 </p>
 
 **Group 08**  
