@@ -1,11 +1,9 @@
 # Automatic Gain Controller
 
-<<<<<<< HEAD
 <p align="center">
   <img src="media/images/AGC_thumbnail.png" alt="Automatic Gain Controller Overview" width="950">
 </p>
-=======
->>>>>>> 8b49ec79bc0c635f530fbbcdaadaca2a84765542
+
 
 This repository contains the project files for our **Automatic Gain Controller (AGC)** project. The project focuses on designing, simulating, building, and testing an analog audio AGC circuit.
 
