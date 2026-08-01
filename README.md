@@ -2,7 +2,7 @@
 
 <<<<<<< HEAD
 <p align="center">
-  <img src="media/images/agc_thumbnail.png" alt="Automatic Gain Controller Overview" width="950">
+  <img src="media/images/AGC_thumbnail.png" alt="Automatic Gain Controller Overview" width="950">
 </p>
 =======
 >>>>>>> 8b49ec79bc0c635f530fbbcdaadaca2a84765542
